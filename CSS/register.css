@@ -1,0 +1,228 @@
+﻿/*全局设置*/
+*{
+    margin: 0%;             /*外边距*/
+    padding: 0%;            /*内边距*/
+    text-decoration: none;  /*文字没有下划线*/
+}
+
+body {
+	background: #f0f0f0;
+}
+
+/* 弹窗*/
+#div{
+    position: fixed;
+    border-radius: 10px;
+    background-color: #00FFFF;
+    opacity: 0.8;
+    width: 280px;
+    height: 130px;
+    left:50%;
+    top:50%;
+    margin-left:-145px; 
+    margin-top:-15%; 
+}
+/* 图标和字体分离*/
+#div #divt{
+    height: 65%;
+    text-align: center;
+    line-height: 84.5px;
+}
+#div #divf{
+    height: 35%;
+    text-align: center;
+    line-height: 45.5px;
+}
+/*图标大小与颜色*/
+#ic{
+    font-size: 75px;
+    opacity: 1;
+}
+/*弹窗字体大小*/
+#wz{
+    font-size: 18px;
+}
+/*主div*/
+.container,
+.main{
+    background: #ffffff;    /*背景颜色*/
+    width: 854px;               /*宽度*/
+    margin: 80px auto;          /*外边距*/
+}
+.container{
+    height: 700px;
+}
+
+.main{
+    height: 500px;;
+}
+
+/*h4标签*/
+h4{
+    text-align: center;         /*居中对其*/
+    font-size: 40px;            /*字体大小*/
+    color: #44a8e0
+}
+
+/*设置main里面的所有div为左浮动*/
+.main div{
+    float: left;                /*向左浮动*/
+}
+
+/* content-1和content-3的宽度*/
+.content-1,
+.content-3{
+    width: 250px;       /*宽度*/
+    background-color: #ffffff;
+}
+
+/*content-1的宽度设置*/
+.content-2{
+    width: 354px;           /*宽度*/
+    background-color: #ffffff;
+}
+
+/* p标签的边距和对其方式*/
+.content-1 p{
+    display: block;     /*p标签转换为块元素*/
+    color: #000000;      /*字体颜色*/
+    height: 39.7px;
+    line-height: 40px;  /*字体高度*/
+    text-align: right;
+    margin: 20px 0px 40px 170px; /*p标签边距设置   上-右-下-左 */
+}
+
+/*div*/
+.nav2{
+    width: 100%;        /* 宽度100%*/
+}
+
+/*form表单input*/
+.nav2 input{
+    width: 270px;           /*宽度*/
+    height: 37.7px;           /* 高度*/
+    border: 1.5px solid #44a8f2;   /*边框大小、边框样式、边框颜色*/
+    border-radius: 5px;    /*input输入框切角弧度*/
+    font-size: 17px;        /*字体大小*/
+    margin-left: 35px;       /* 外左边距*/
+    margin-top: 20px;       /* 外上边距*/
+    margin-bottom: 20px;    /* 外下边距*/
+    padding-left: 10px;     /* 内左边距*/
+}
+
+.nav2 .span1,
+.nav2 .span2,
+.nav2 .span3,
+.nav2 .span4{
+    color: #F00;
+    float: right;
+    margin-top: 30px;       /* 外上边距*/
+    margin-bottom: 20px;    /* 外下边距*/
+    margin-right: 20px;
+}
+/*提交按钮*/
+.Sbt{
+    display: block;             /* 强制转换成快元素*/
+    color: #fff;                /*字体颜色*/
+    border: 1.5px solid #999;    /*边框大小、样式、颜色*/
+    width: 200px;               /*宽度*/
+    height: 40px;               /*高度*/
+    font-size: 17px;            /*字体大小*/
+    border-radius: 7px;         /*切角弧度*/
+    background-color: #44a8e0;   /*背景颜色*/
+    margin: 0px auto;             /*相对居中*/
+    margin-top: 20px;
+}
+
+/*提交按钮伪元素*/
+.Sbt:hover{
+    background-color: #44a8ff;   /*光标在该范围内改变颜色*/
+    border: 1.5px solid #44a8f2;
+}
+
+/*激活邮箱button按钮*/
+.content-3 input{
+    width: 120px;           /*宽度*/
+    height: 39.7px;         /*高度*/
+    border: 1.5px solid #44a890;    /*边框大小、样式、颜色*/
+    background-color: #44a8e0; /* 背景颜色*/
+    color: #fff;         /*字体颜色*/
+    margin-top: 19.7px;     /*上边距*/
+    font-size: 16px;        /*字体大小*/
+    border-radius: 5px;     /*切角弧度*/
+}
+/*激活邮箱伪元素*/
+.content-3 input:hover{  
+    border: 1.5px solid #44a8f2;    /*光标在该范围内改变边框颜色*/
+}
+
+/* 友情提示*/
+.content-3 #friendship-hint{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 90%;
+    padding: 5%;
+    font-size: 12px;
+    color: #f40;
+}
+/*分割线*/
+#hr1{
+    border: 1px solid #44a8ff;  /*注册方式处*/
+    margin-top: 0%;
+}
+
+/*确认框CheckBox*/
+.radio{
+    margin-top: 20px;   /* 上边距*/
+ 
+}
+
+/*a标签伪元素*/
+.content-2 .nav2 a:hover{
+    color: #f00;    /*更改字体颜色*/
+}
+
+.ddiv{
+    width: 100%;
+    height: 50px;
+}
+
+#hr2{
+    border: 1px solid #44a8ff;
+    margin-top: 25px;
+}
+
+.phone,
+.E-mail{
+    display:inline-block;
+    width: 49.7%;
+    height: 40px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.container .phone{
+    background-color: #44a8e0;
+    color: #FFFFFF;
+}
+
+#argee{
+    width: 100%;
+    text-align: center;
+}
+
+#argee span{
+    color: #44a890; /* 用户条款*/
+}
+
+#deal{
+    font-size: 12px;
+    color: #F00;
+}
+
+#icon{
+    color: #1296db;
+    text-align: center;
+}

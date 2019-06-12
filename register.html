@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' />  
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="CSS/logo/iconfont.css">
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+<body onload="Choose()">
+    <div>
+        <div class="container">
+            <div id="div">
+                <div id="divt">
+                    <span class="iconfont" id="ic"></span>
+                </div>
+                <div id="divf">
+                    <span id="wz"></span>
+                </div>
+            </div>
+            <h4>用户注册</h4>
+            <span class="phone" id="phone" onclick="Registration_mode1()">电话注册</span>
+            <span class="E-mail" id="E-mail" onclick="Registration_mode2()">邮箱注册</span>
+            <hr id="hr1">
+            <div class="main">
+                <div class="content-1">
+                    <p id="em">电话</p>
+                    <p>验证码</p>
+                    <p>密码</p>
+                    <p>确认密码</p>
+                </div>
+                <div class="content-2">                    
+                    <div class="nav2">
+                        <input type="text" name="email" id="email" placeholder="请输入电话" oninput="Choose()">
+                        <span class="iconfont" id="span1"></span>
+                        <input type="text" name="email-verify" id="email-verify" placeholder="请输入验证码" oninput="verification()">
+                        <span class="iconfont" id="span2"></span>
+                        <input type="password" name="userpass" id="userpass" placeholder="请输入新密码" oninput="password()" onkeyup="astrict()">
+                        <span class="iconfont" id="span3"></span>
+                        <input type="password" name="userpassCon" id="userpassCon" placeholder="请确认新密码" oninput="verifypwd()" onkeyup="astrict()">
+                        <span class="iconfont" id="span4"></span>
+
+                    </div>
+                    <span class="iconfont" id="icon"></span>
+                    <span id="deal"></span>
+                    <input class="Sbt" type="submit" value="提   交" id="bt1" onclick="return validate_form(this);">                       
+                    <hr id="hr2">
+                </div>
+                <div class="content-3">
+                    <div id="btnsubmit">
+                        <input type="submit" value="发送验证码" id="bt2" onclick="Activate()" >
+                    </div>
+                    <div id="friendship-hint">
+                        <p>友情提示:</p><br>
+                        <p>如果遇到无法接收验证码可能被系统错误判定垃圾邮件放入了垃圾箱
+                            请前往邮箱查看! 给您带来不便请您谅解!
+                        </p>
+                    </div>
+                </div>
+                <div id="argee">
+                    <input class="radio" type="checkbox" id="radio" checked onclick="if (this.checked) {enable()} else {disable()}">
+                    <span>注册帐号即表示您同意并愿意遵守微校</span><a href="">《用户协议》</a><span>和</span><a href="">《隐私政策》</a>
+                    <p id="demo"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ddiv">
+        
+    </div>
+    <script src="JS/register.js"></script>
+    <script src="JS/jquery-3.4.0.js"></script>  
+</body>
+</html>
