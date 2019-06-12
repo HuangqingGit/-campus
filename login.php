@@ -1,6 +1,7 @@
 <?php
     $user = Trim($_GET['user']);
     $pwd = Trim($_GET['pwd']) ;
+	
 ?>
 
 <!DOCTYPE html>
