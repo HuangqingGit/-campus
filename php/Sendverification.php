@@ -2,7 +2,7 @@
 
 require __DIR__ . "/NoteSend/src/index.php";                // 引入index.php文件
 
-$phone = $_POST['phone'];                                   //通过POST方法获取电话号码
+$phone = '17345240339';                                   //通过POST方法获取电话号码
 $aray = rand(100000,999999);                                //rand()函数生成随机验证码
 
 $appid = 1400200126;                                        // 短信应用 SDK AppID 以1400开头
@@ -41,4 +41,3 @@ else{
     header('Content-Type:text/xml; charset=utf-8'); 
     echo json_encode($result);
 }
-?>
